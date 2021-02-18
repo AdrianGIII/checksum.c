@@ -47,8 +47,7 @@ int main(int argc, char* argv[], char** envp) {
         quotient = sum / (max_int + 1);
         remainder = sum % (max_int + 1);
         sum = quotient + remainder;
-        //fprintf(stdout, "Sum at %d: %d \n", i, sum
-        );
+        //fprintf(stdout, "Sum at %d: %d \n", i, sum);
 
 
     }
