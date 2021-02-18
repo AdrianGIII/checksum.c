@@ -31,7 +31,7 @@ int main(int argc, char* argv[], char** envp) {
     for (int i = 0; i < count; i++) {
         //scanf("%d", &temp);
         //header[i] = (byte) temp;
-        fprintf(stdout, "header[%d]: %d \n", i, header[i]);
+        //fprintf(stdout, "header[%d]: %d \n", i, header[i]);    TESTING IN THE SERVER WORKED WOOOOOOOO
         if (i == checksumID - 1) {
             checksum = header[i];
             header[i] = 0;
@@ -47,7 +47,7 @@ int main(int argc, char* argv[], char** envp) {
         quotient = sum / (max_int + 1);
         remainder = sum % (max_int + 1);
         sum = quotient + remainder;
-        fprintf(stdout, "Sum at %d: %d \n", i, sum
+        //fprintf(stdout, "Sum at %d: %d \n", i, sum
         );
 
 
