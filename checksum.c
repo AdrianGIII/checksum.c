@@ -6,7 +6,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
-//#include "unistd.h"
+#include "unistd.h"
 
 #define max_int (255)
 #define byte unsigned char
@@ -25,7 +25,7 @@ int main(int argc, char* argv[], char** envp) {
     int reval = 0;
 
     /* the following is the prototype for the read system call */
-    reval = read(0, &header, 10);
+    reval = read(STDIN_FILENO, &header, 10);
 
     // start of copy pasta
     for (int i = 0; i < count; i++) {
